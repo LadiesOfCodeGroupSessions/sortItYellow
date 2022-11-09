@@ -1,1 +1,5 @@
-// Hello, I'm main
+class Balls:
+
+    def __init__(self):
+        self.total = 60
+
