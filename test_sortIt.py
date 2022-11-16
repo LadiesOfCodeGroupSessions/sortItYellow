@@ -8,3 +8,8 @@ def test_totalBalls():
 def test_new_rack():
     rack = Rack()
     assert rack.__eq__([])
+
+def test_add_ball_to_rack():
+    rack = Rack()
+    rack.add(20)
+    assert rack.__eq__([20])
