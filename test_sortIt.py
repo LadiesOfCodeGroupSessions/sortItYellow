@@ -7,4 +7,4 @@ def test_totalBalls():
 
 def test_new_rack():
     rack = Rack()
-    assert rack == []
+    assert rack.__eq__([])
