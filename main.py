@@ -6,7 +6,8 @@ class Balls:
 class Rack:
 
     def __init__(self):
-        self = []
+        self.list = []
+
 
     def add(self, number_on_the_ball):
         self.number_on_the_ball = 0
