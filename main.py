@@ -1,14 +1,20 @@
-class Balls:
+class BallsCollection:
 
     def __init__(self):
-        self.total = 60
+        self.balls = {list(range(0, 59))}
+        print(self.balls)
+
+    def takeaway(self):
+        pass
+
+    def count(self):
+        return len(self.balls)
+
 
 class Rack:
 
     def __init__(self):
         self.new_rack = []
-        self.number_on_the_ball = 0
-        self.firstElement = self.new_rack[:1]
 
     def put(self, number_on_the_ball):
         self.new_rack.append(number_on_the_ball)
