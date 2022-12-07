@@ -16,8 +16,8 @@ class Rack:
     def __init__(self):
         self.new_rack = []
 
-    def put(self, number_on_the_ball):
-        self.new_rack.append(number_on_the_ball)
+    def put(self, ball):
+        self.new_rack.append(ball)
 
     def count(self):
         return len(self.new_rack)
