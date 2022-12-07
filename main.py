@@ -1,11 +1,11 @@
 class BallsCollection:
 
     def __init__(self):
-        self.balls = {list(range(0, 59))}
+        self.balls = set(list(range(0, 60)))
         print(self.balls)
 
-    def takeaway(self):
-        pass
+    def takeaway(self, ball):
+        self.balls.remove(ball)
 
     def count(self):
         return len(self.balls)
