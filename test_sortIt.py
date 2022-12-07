@@ -7,15 +7,9 @@ def test_totalBalls():
 
 def test_new_rack():
     rack = Rack()
-    assert len(rack.list) == 0
+    assert len(rack.new_rack) == 0
 
 def test_add_ball_to_rack():
     rack = Rack()
-    rack.append(20)
-    assert list([20])
-
-def test_add_me_correctly():
-    rack = Rack()
-    rack.add(20)
-    rack.add(10)
-    assert list([10, 20])
+    rack.put(20)
+    assert rack.count()==1
